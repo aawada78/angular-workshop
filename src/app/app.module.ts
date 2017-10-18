@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { GuestBookComponent } from './guest-book/guest-book.component';
 import { GuestListComponent } from './guest-list/guest-list.component';
+import { GuestBookService } from './services/guest-book.service';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import { GuestListComponent } from './guest-list/guest-list.component';
     BrowserModule,
     FormsModule
   ],
-  providers: [],
+  providers: [ GuestBookService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

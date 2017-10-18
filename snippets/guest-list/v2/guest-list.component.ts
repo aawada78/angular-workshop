@@ -12,5 +12,4 @@ export class GuestListComponent implements OnInit {
 
   ngOnInit() {
   }
-
 }
