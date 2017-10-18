@@ -1,0 +1,20 @@
+<div style="text-align: center;">
+    <h4>Type your name and feedback below to sign the guestbook:</h4>
+  
+    <form (ngSubmit)="onSubmit()" #form="ngForm">
+      <div >
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" name="name" placeholder="Name" required [(ngModel)]="formModel.name" #inputName="ngModel">
+      </div>
+      <div >
+        <label for="name">Feedback</label>
+        <textarea rows="4" cols="50" id="feedback" name="feedback" placeholder="Feedback" [(ngModel)]="formModel.feedback"
+          #inputFeedback="ngModel"></textarea>
+      </div>
+  
+      <button type="submit">Sign</button>
+  
+    </form>
+  </div>
+  <hr>
+  <app-guest-list [guestList]="guestList"></app-guest-list>

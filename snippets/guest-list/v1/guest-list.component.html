@@ -1,0 +1,5 @@
+<div style="text-align: center;">
+  <div *ngIf="guestList">
+    <p *ngFor="let guest of guestList">{{ guest.name }} - {{ guest.feedback }}</p>
+  </div>
+</div>
