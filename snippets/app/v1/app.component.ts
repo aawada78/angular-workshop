@@ -7,40 +7,11 @@ import { Component, OnInit, ViewChild } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'Angular Workshop';
-
-  guestList: Array<any>;
-
-  initialGuestList = [
-    {
-      name: 'Arnold',
-      feedback: 'I will be back!'
-    },
-    {
-      name: 'Bruce',
-      feedback: 'Yippie-Ya-Yeah, Schweinebacke!'
-    },
-    {
-      name: 'Rocky',
-      feedback: 'Boxen kannst du ja, aber du quatscht zuviel!'
-    },
-  ];
-
-  @ViewChild('form') form: NgForm;
-
-  formModel: any = {
-    name: null,
-    feedback: null
-  };
+  title = 'Guest Book';
+  workshopName = 'Angular Workshop';
 
   constructor() { }
 
-  onSubmit() {
-    this.guestList.push({ name: this.formModel.name, feedback: this.formModel.feedback });
-    this.form.reset();
-  }
-
   public ngOnInit(): void {
-    this.guestList = this.initialGuestList;
   }
 }

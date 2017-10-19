@@ -1,11 +1,16 @@
-import { Component, } from '@angular/core';
+import { NgForm, FormsModule } from '@angular/forms';
+import { Component, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = 'Angular Workshop';
-  appName = 'Guest Book';
+export class AppComponent implements OnInit {
+  title = 'Guest Book';
+
+  constructor() { }
+
+  public ngOnInit(): void {
+  }
 }
