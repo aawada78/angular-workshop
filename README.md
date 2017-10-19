@@ -1,6 +1,7 @@
 # AngularWorkshop
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.7.
+It contains a simple Guest-Book and is used as a showcase for students.
 
 ## Development server
 
