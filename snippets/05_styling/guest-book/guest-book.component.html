@@ -1,7 +1,7 @@
 <div class="container-fluid container-scroll overflow-hidden">
 
   <div class="form-container">
-    
+
     <h4 class="text-center" style="margin-bottom: 20px;">Sign the guest book:</h4>
 
     <form class="form-horizontal" (ngSubmit)="onSubmit()" #form="ngForm">
@@ -14,13 +14,15 @@
       <div class="form-group">
         <label for="name" class="col-sm-3 control-label">Feedback</label>
         <div class="col-sm-9">
-          <textarea rows="4" cols="50"  class="form-control" id="feedback" name="feedback" placeholder="Feedback" [(ngModel)]="formModel.feedback" #inputFeedback="ngModel"></textarea>
+          <textarea rows="4" cols="50" class="form-control" id="feedback" name="feedback" placeholder="Feedback" [(ngModel)]="formModel.feedback"
+            #inputFeedback="ngModel"></textarea>
         </div>
       </div>
 
       <button type="submit" class="btn btn-primary col-xs-12 col-sm-3 col-sm-offset-9" [disabled]="!form.valid">Sign</button>
 
     </form>
+
   </div>
 </div>
 <hr>

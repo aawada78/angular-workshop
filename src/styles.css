@@ -1,9 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
 
 @import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 body {
-    background-color: #f8f8f8;
+    background-color: #F3F2EF;
 }
 
 a.active {
@@ -25,15 +24,33 @@ a.active {
     overflow: hidden;
 }
 
-button[type="submit"] {
+button.btn-primary, .btn-primary:hover {
     margin-top: 1rem;
     margin-bottom: 4rem;
+    background: linear-gradient(#d3ecad, #b1de70);
+    border-bottom-color: #677e46;
+    font-weight: 600;
+    color: rgba(15,15,15,0.85);
+}
+
+.btn-primary:hover {
+    background: linear-gradient(#c7e799, #a1d751);
+    
+}
+    
+button.btn-primary[disabled], button.btn-primary[disabled]:hover {
+    background: #edece8;
 }
 
 .list-item {
-    border: 1px solid #23527c;
+    border: 1px solid #cbcac9;
     border-bottom: 0;
-    padding: 10px
+    padding: 10px;
+    background-color: #fbfbfa;
+}
+
+.list-item:hover {
+    background-color: #ddf1c1;
 }
 
 .list-item:first-child {
@@ -41,9 +58,12 @@ button[type="submit"] {
 }
 
 .list-item:last-child {
-    border-bottom: 1px solid #23527c;
+    border-bottom: 1px solid #cbcac9;
     border-radius: 0 0 5px 5px;
     margin-bottom: 25px
 }
 
-
+.header-img {
+    display: inline; 
+    margin: 0 25px;
+}
