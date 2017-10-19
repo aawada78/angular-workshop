@@ -6,11 +6,6 @@ import { GuestBookComponent } from './guest-book/guest-book.component';
 const APP_ROUTES: Routes = [
     {
         path: '',
-        redirectTo: '/home',
-        pathMatch: 'full'
-    },
-    {
-        path: 'home',
         component: HomeComponent,
     },
     {
