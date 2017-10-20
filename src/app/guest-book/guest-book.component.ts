@@ -1,3 +1,4 @@
+import { Guest } from '../model/guest';
 import { GuestBookService } from '../services/guest-book.service';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
@@ -11,7 +12,7 @@ export class GuestBookComponent {
 
   @ViewChild('form') form: NgForm;
 
-  formModel: any = {
+  guest: Guest = {
     name: null,
     feedback: null
   };
@@ -19,7 +20,11 @@ export class GuestBookComponent {
   constructor(private guestBookService: GuestBookService) { }
 
   onSubmit() {
-    this.guestBookService.addGuest(this.formModel.name, this.formModel.feedback);
+    this.guestBookService.addGuest(this.guest.name, this.guest.feedback);
     this.form.reset();
+  }
+
+  inviteStarWarsPeople() {
+    this.guestBookService.inviteStarWarsPeople();
   }
 }
